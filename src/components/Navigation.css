@@ -1,0 +1,30 @@
+.navbar{
+    background: #0B0C10;
+    color: #C5C6C7;
+    height: 78px;
+    max-width: 1600px;
+    margin: auto;
+}
+
+.navbar__container{
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-btn{
+    border: 1px solid #C5C6C7;
+    border-radius: 20px;
+    padding: 6px 18px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.contact-btn:hover{
+    background: #66FCF1;
+    color: #0B0C10;
+    border: 1px solid #66FCF1;
+}

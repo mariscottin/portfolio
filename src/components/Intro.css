@@ -1,0 +1,40 @@
+.intro__container{
+    height: 100%;
+    background: #45A29E;
+}
+
+.intro-1__container{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding-top: 120px;
+    padding-bottom: 90px;
+    color: #fff;
+}
+
+.intro__container h1, .intro__container p{
+    margin: 0;
+}
+
+.intro__container p{
+    font-size: 1.15rem;
+    line-height: 2.1rem;
+}
+
+.microsoft-link{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+@media(max-width: 678px){
+    .intro-1__container{
+        width: 90%;
+        padding-top: 80px;
+    }
+
+    .intro__container p{
+        font-size: 1.05rem;
+        line-height: 1.9rem;
+    }
+}
