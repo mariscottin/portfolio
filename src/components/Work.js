@@ -36,10 +36,10 @@ const Work = () => {
                         <WorkCard 
                         title="Golfam Live Prototype" 
                         img={GolfamImg} 
-                        link="https://capillamarin.org.ar"
-                        github="https://github.com/mariscottin/capillamarin"
-                        subtitle="A golf web app for amateur players, and a management software for golf courses (both prototypes)."
-                        details={['React JS for frontend', 'Node JS for backend', 'Mongodb as DB']}
+                        link="https://golfamfrontend.z19.web.core.windows.net/"
+                        github="https://github.com/mariscottin/golfam"
+                        subtitle="A golf web app prototype for amateur players."
+                        details={['React JS for frontend', 'Node JS for backend', 'Mongodb as DB', 'REST API deployed to Heroku', 'React App deployed to Azure']}
                         username="113113"
                         password="113113113"
                         />
