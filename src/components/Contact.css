@@ -116,6 +116,20 @@
     color: rgb(230, 230, 230);
 }
 
+.required-input-message{
+    color: rgb(163, 22, 22);
+    font-size: 14px;
+    margin: 0;
+}
+
+.missing-input{
+    border-bottom: 1px solid rgb(163, 22, 22) !important;
+}
+
+.missing-textarea{
+    border: 1px solid rgb(163, 22, 22) !important;
+}
+
 
 @media(max-width: 768px){
     .contact-title h3{

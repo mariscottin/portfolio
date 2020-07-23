@@ -10,7 +10,7 @@ const Home = () => {
             <div className='home-title__container'>
                 <Zoom>
                     <h1>Hi! I'm Nico. Nice to meet you.</h1>
-                    <h4>I am a self-tought, passionate web developer seeking for a change in my career to pursuit my passion: <br/>{'< '}Coding{' />'}</h4>
+                    <h4>I am a self-taught, passionate web developer seeking for a change in my career to pursuit my passion: <br/>{'< '}Coding{' />'}</h4>
                 </Zoom>
             </div>
             <Roll>

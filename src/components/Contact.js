@@ -7,22 +7,42 @@ import './Contact.css';
 const Contact = () => {
     const [isLoading, setIsLoading ] = useState(false);
     const [ messageSent, setMessageSent ] = useState(false);
+    const [ userName, setUserName ] = useState();
+    const [ userEmail, setUserEmail ] = useState();
+    const [ userMessage, setUserMessage ] = useState();
+    const [ missingName, setMissingName ] = useState(false);
+    const [ missingEmail, setMissingEmail ] = useState(false);
+    const [ missingMessage, setMissingMessage ] = useState(false);
 
 
     const formSubmit = (e) => {
         e.preventDefault();
-        setIsLoading(true);
-        emailjs.sendForm('gmail', 'portfolio', e.target, 'user_kRYTK0s5gHq9XBkGL69xv')
-            .then(() => {
-                setMessageSent(true);
-            }, (error) => {
-                console.log(error.text);
-                window.alert('Something went wrong sending the message. Please try again!')
-            })
-            .then(() => {
-                setMessageSent(true);
-                setIsLoading(false);
-            });
+        if(!userName || userName === ''){
+            setMissingName(true);
+        }
+        if(!userEmail || userEmail === ''){
+            setMissingEmail(true);
+        }
+        if(!userMessage || userMessage === ''){
+            setMissingMessage(true);
+        }
+        if(userName && userName !== '' && userEmail && userEmail !== '' && userMessage && userMessage !== ''){
+            setIsLoading(true);
+            emailjs.sendForm('gmail', 'portfolio', e.target, 'user_kRYTK0s5gHq9XBkGL69xv')
+                .then(() => {
+                    setMessageSent(true);
+                }, (error) => {
+                    console.log(error.text);
+                    window.alert('Something went wrong sending the message. Please try again!')
+                })
+                .then(() => {
+                    setMessageSent(true);
+                    setIsLoading(false);
+                    setUserName();
+                    setUserEmail();
+                    setUserMessage();
+                });
+        }
     }
     return (
         <div id='contactSection' className='section contact-section'>
@@ -51,14 +71,32 @@ const Contact = () => {
                     <form className="contact-form" onSubmit={(e) => formSubmit(e)}>
                         <div className="name-email-input__container">
                             <div className="name-input__container">
-                                <input type="text" placeholder="Your name" name='user_name'/>
+                                <input className={missingName && 'missing-input'} type="text" placeholder="Your name" name='user_name' onChange={(e)=> {
+                                    setUserName(e.target.value)
+                                    setMissingName(false)
+                                    }}/>
+                                {missingName &&
+                                    <p className="required-input-message">Please fill up your name!</p>
+                                }
                             </div>
                             <div className="email-input__container">
-                                <input type="email" placeholder="your@email.com" name="user_email"/>
+                                <input className={missingEmail && 'missing-input'} type="email" placeholder="your@email.com" name="user_email" onChange={(e)=>{
+                                    setUserEmail(e.target.value)
+                                    setMissingEmail(false)
+                                    }}/>
+                                {missingEmail &&
+                                    <p className="required-input-message">Please fill up your Email!</p>
+                                }
                             </div>
                         </div>
                         <div className="message-input__container">
-                            <textarea placeholder="Your message" name='user_message'/>
+                            <textarea className={missingMessage && 'missing-textarea'} placeholder="Your message" name='user_message' onChange={(e)=>{
+                                setUserMessage(e.target.value)
+                                setMissingMessage(false)
+                                }}/>
+                            {missingMessage &&
+                                <p className="required-input-message">Please fill up your message!</p>
+                            }
                         </div>
                         <div className="send-btn__container">
                             {isLoading &&
