@@ -12,7 +12,7 @@ const SkillsCard = () => {
             <div className="skills-container">
                 <div className="column">
                     <div className="skill-title">
-                        <FontAwesomeIcon icon={faCode} className="skill-icon"/>
+                        <FontAwesomeIcon icon={faCode} className="skill-icon" />
                         <h3>Frontend</h3>
                     </div>
                     <div className="skills-list__container">
@@ -30,13 +30,13 @@ const SkillsCard = () => {
                                 React js
                                 </li>
                             <li>
-                                Gatsby
+                                Bootstrap
                                 </li>
                             <li>
                                 JQuery
                                 </li>
                             <li>
-                                Bootstrap
+                                Gatsby
                                 </li>
                             <li>
                                 EJS
@@ -44,9 +44,9 @@ const SkillsCard = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="column">
+                <div className="column center-column">
                     <div className="skill-title">
-                        <FontAwesomeIcon icon={faCogs} className="skill-icon"/>
+                        <FontAwesomeIcon icon={faCogs} className="skill-icon" />
                         <h3>Backend</h3>
                     </div>
                     <div className="skills-list__container">
@@ -75,12 +75,15 @@ const SkillsCard = () => {
                             <li>
                                 Azure Storage
                                 </li>
+                            <li>
+                                Firebase
+                                </li>
                         </ul>
                     </div>
                 </div>
                 <div className="column last-column">
                     <div className="skill-title">
-                        <FontAwesomeIcon icon={faTools} className="skill-icon"/>
+                        <FontAwesomeIcon icon={faTools} className="skill-icon" />
                         <h3>Tools &amp; Technologies</h3>
                     </div>
                     <div className="skills-list__container">
