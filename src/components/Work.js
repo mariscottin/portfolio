@@ -3,6 +3,7 @@ import WorkCard from './WorkCard';
 import { Zoom } from 'react-reveal';
 
 import CapillaImg from '../assets/img/capilla-marin.png';
+import Greenbook from '../assets/img/greenbook.png';
 import AmazonClone from '../assets/img/amazon-clone.png';
 import GolfamImg from '../assets/img/golfam.png';
 import RockImg from '../assets/img/rock-paper-scissors.png';
@@ -29,6 +30,18 @@ const Work = () => {
                             github="https://github.com/mariscottin/capillamarin"
                             subtitle="Church website with custom-made admin portal."
                             details={['Node JS for backend', 'EJS as View Engine', 'PostgreSQL as DB', 'AWS S3 for media storage', 'Deployed to Heroku']}
+                        />
+                    </Zoom>
+                </div>
+                <div className="work-card__container">
+                    <Zoom>
+                        <WorkCard
+                            title="Green Book Academy"
+                            img={Greenbook}
+                            link="https://www.greenbookacademy.com"
+                            github="https://github.com/mariscottin/greenbook"
+                            subtitle="Landing page for customer"
+                            details={['React JS', 'Bootstrap', 'i18next for language translation', 'Deployed to Heroku']}
                         />
                     </Zoom>
                 </div>
