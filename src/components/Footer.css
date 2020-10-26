@@ -2,12 +2,11 @@
     background: #0B0C10;
     color: #fff;
     min-height: 216px;
-    max-width: 1600px;
-    margin: auto;
 }
 
 .footer__container{
     width: 80%;
+    max-width: 1600px;
     margin: auto;
     height: 216px;
     display: flex;

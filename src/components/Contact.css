@@ -1,6 +1,7 @@
 .contact-section{
     background: #45A29E;
     padding-bottom: 80px;
+    padding-top: 28px;
 }
 
 .contact-title{
@@ -26,6 +27,7 @@
 
 .contact-form__container{
     width: 100%;
+    max-width: 1600px;
     margin: auto;
 }
 
@@ -57,6 +59,8 @@
     border-bottom: 1px solid #fff;
     color: #fff;
     border-radius: 5px;
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 14px;
 }
 
 .name-input__container input::placeholder, .email-input__container input::placeholder, .message-input__container textarea::placeholder{
@@ -80,6 +84,8 @@
     padding: 12px;
     color: #fff;
     resize: none;
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 14px;
 }
 
 .send-btn{

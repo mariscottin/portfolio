@@ -57,6 +57,9 @@ const Work = () => {
                         />
                     </Zoom>
                 </div>
+
+            </div>
+            <div className="work__container">
                 <div className="work-card__container">
                     <Zoom>
                         <WorkCard

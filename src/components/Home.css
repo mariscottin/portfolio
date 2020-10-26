@@ -1,9 +1,12 @@
 .home-section{
-    height: 580px;
+    min-height: 580px;
+    height: 90vh;
+    max-height: 1100px;
     position: relative;
     width: 100%;
     background: #0b0c10;
     padding: 0;
+    padding-top: 68px;
     text-align: center;
 }
 

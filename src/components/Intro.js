@@ -1,9 +1,9 @@
 import React from 'react';
 import { Zoom } from 'react-reveal';
-
+import ProfileImg from '../assets/img/profile.jpg'
 import './Intro.css';
 const Intro = () => {
-    return(
+    return (
         <div id='introSection' className='section intro-section'>
             <div className="intro__container">
                 <div className="intro-1__container">
@@ -13,6 +13,11 @@ const Intro = () => {
                         <p>I've been doing web development as a hobby for the past few years, but I now want to make a career out of it to continue learning and growing.</p>
                         <p>I am a well-organized person, a problem solver, a fast-learner and a teamworker with high attention to detail.</p>
                         <p>I love golf and soccer. I don't like chocolate.</p>
+                    </Zoom>
+                </div>
+                <div className="intro__image">
+                    <Zoom>
+                        <img src={ProfileImg} alt="Nico Mariscotti Profile" />
                     </Zoom>
                 </div>
             </div>

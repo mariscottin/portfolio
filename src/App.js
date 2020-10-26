@@ -6,6 +6,7 @@ import Skills from './components/Skills';
 import Work from './components/Work';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Sidebanner from './components/Sidebanner';
 
 import './App.css';
 
@@ -13,6 +14,7 @@ function App() {
   return (
     <div className="App">
       <Navigation />
+      <Sidebanner />
       <Home />
       <Intro />
       <Skills />

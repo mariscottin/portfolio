@@ -1,14 +1,15 @@
 .work-section{
-    padding-top: 50px;
+    padding-top: 88px;
     padding-bottom: 90px;
 }
 
 .work__container{
     width: 90%;
+    max-width: 1600px;
     margin: auto;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
     padding-top: 18px;
@@ -25,9 +26,16 @@
     margin-bottom: 30px;
 }
 
-@media(max-width: 512px){
+@media(max-width: 850px){
+    .work__container{
+        width: 100%;
+    }
+}
+
+@media(max-width: 667px){
     .work__container{
         flex-direction: column;
+        margin-left: -8px;
     }
 
     .work-card__container{
