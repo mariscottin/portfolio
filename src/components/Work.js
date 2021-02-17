@@ -4,6 +4,7 @@ import { Zoom } from 'react-reveal';
 
 import CapillaImg from '../assets/img/capilla-marin.png';
 import Greenbook from '../assets/img/greenbook.png';
+import NetflixClone from '../assets/img/netflix-clone.png';
 import AmazonClone from '../assets/img/amazon-clone.png';
 import GolfamImg from '../assets/img/golfam.png';
 import RockImg from '../assets/img/rock-paper-scissors.png';
@@ -48,16 +49,27 @@ const Work = () => {
                 <div className="work-card__container">
                     <Zoom>
                         <WorkCard
+                            title="Netflix Clone"
+                            img={NetflixClone}
+                            link="https://netflix-clone-4685d.web.app/"
+                            github="https://github.com/mariscottin/Netflix-clone"
+                            subtitle="Built with React.js with auth and payment"
+                            details={['React JS', 'Redux', 'Firestore as DB', 'Authentication with Firebase', 'Stripe for payment processing', 'Deployed to Firebase', 'Axios to fetch from TMDB']}
+                        />
+                    </Zoom>
+                </div>
+                <div className="work-card__container">
+                    <Zoom>
+                        <WorkCard
                             title="Amazon Clone"
                             img={AmazonClone}
                             link="https://clone-a5a50.web.app/"
                             github="https://github.com/mariscottin/amazon-clone"
-                            subtitle="Amazon clone with payment functionality"
-                            details={['React JS', 'Firestore as DB', 'Cloud Functions and authentication with Firebase', 'Deployed to Firebase']}
+                            subtitle="Built with React.js with auth and payment"
+                            details={['React JS', 'Firestore as DB', 'Cloud Functions and authentication with Firebase', 'Stripe for payment processing', 'Deployed to Firebase']}
                         />
                     </Zoom>
                 </div>
-
             </div>
             <div className="work__container">
                 <div className="work-card__container">
