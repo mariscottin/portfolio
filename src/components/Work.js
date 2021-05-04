@@ -54,7 +54,7 @@ const Work = () => {
                             link="https://netflix-clone-4685d.web.app/"
                             github="https://github.com/mariscottin/Netflix-clone"
                             subtitle="Built with React.js with auth and payment"
-                            details={['React JS', 'Redux', 'Firestore as DB', 'Authentication with Firebase', 'Stripe for payment processing', 'Deployed to Firebase', 'Axios to fetch from TMDB']}
+                            details={['React JS', 'Redux', 'Firestore as DB', 'Authentication with Firebase', 'Stripe for payment processing', 'Deployed to Firebase']}
                         />
                     </Zoom>
                 </div>
